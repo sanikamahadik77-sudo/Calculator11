@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: max-content;
+    text-align: center;
+    padding: 50px 30px;
+}
+.container2{
+    background: rgb(95, 143, 190);
+    padding: 50px 10px;
+    border-radius: 20px;
+}
+.input input{
+    height: 50px;
+    width: 175px;
+    font-size: 14px;
+    padding: 10px;
+    margin: 20px;
+    background: rgb(29, 47, 62);
+    color: white;
+    border: 1px solid black;
+    box-shadow: -2px -2px 4px black ,
+                3px 3px 5px white ;
+    border-radius: 5px;
+}
+.row{
+    font-size: 20px;
+    padding: 5px;
+}
+.row>button{
+    background-color: rgb(29, 47, 62);
+    color: white;
+    border: 1px solid black ;
+    box-shadow: -2px -2px 4px black ,
+                3px 3px 5px white ;
+    border-radius: 5px;
+    padding: 0px 5px;
+    width: 40px;
+    height: 40px;
+    font-weight: bolder;
+}
+.row .operator_AC,.row .operator_Del ,.row .operator_equals_to{
+    background-color: orangered;
+    box-shadow: -1px -2px 6px black ,
+                2px 2px 6px white ;
+    border: 1px solid black;
+}
+.row .operator{
+    color: white;
+    font-size:13px ;
+    background-color: rgb(30, 53, 103);
+    box-shadow: -2px -2px 4px black ,
+                3px 3px 5px white ;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(103, 103, 137);
+}
+.row .operator:hover{
+    background-color: rgb(73, 116, 207);
+}
+.row .operator_equals_to:hover{
+    background-color: rgb(176, 1, 24);
+}
+.row .operator_Del:hover{
+    background-color: rgb(176, 1, 24);;
+}
+.row .operator_AC:hover{
+    background-color: rgb(176, 1, 24);;
+}
+.row .operator_AC:active{
+    box-shadow: inset 2px 2px 4px black,
+                 3px 3px 5px white ;
+}
+.row .operator_Del:active{
+    box-shadow: inset 2px 2px 4px black,
+                 3px 3px 5px white ;
+}
+.row .operator_equals_to:active{
+    box-shadow:inset 2px 2px 4px black,
+                 3px 3px 5px white ;
+}
+.row>button:active{
+    box-shadow:inset 3px 2px 5px white,
+                   -2px 2px 5px black;
+}
+.row .operator button:active{
+    box-shadow: -2px -2px 4px white ,
+                3px 3px 5px black ;
+}
